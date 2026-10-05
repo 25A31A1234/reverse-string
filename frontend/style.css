@@ -1,0 +1,123 @@
+/* ---------- 1. Global Reset & Base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #1f2937;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ---------- 2. Card Container ---------- */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- 3. Heading & Description ---------- */
+h1 {
+    font-size: 26px;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+/* ---------- 4. Input Box ---------- */
+#inputString {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 16px;
+    transition: border-color 0.2s ease;
+}
+
+#inputString:focus {
+    border-color: #2563eb;
+}
+
+/* ---------- 5. Reverse Button ---------- */
+#reverseButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#reverseButton:hover {
+    background-color: #1d4ed8;
+}
+
+/* ---------- 6. Results Section ---------- */
+.results {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.result-box {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.result-box h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.result-box p {
+    font-size: 16px;
+    color: #111827;
+    word-wrap: break-word;
+}
+
+/* ---------- 7. Mobile Responsiveness ---------- */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #inputString,
+    #reverseButton {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
